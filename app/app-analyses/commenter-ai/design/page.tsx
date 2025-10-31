@@ -326,7 +326,7 @@ export default function DesignAnalysisPage() {
                 Text legibility suffers.
               </p>
               <p className="text-gray-700 text-sm italic">
-                <strong>Fix:</strong> Follow WCAG contrast ratio >4.5. Lighten text backgrounds or darken text.
+                <strong>Fix:</strong> Follow WCAG contrast ratio {'>'}4.5. Lighten text backgrounds or darken text.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
