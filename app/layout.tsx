@@ -7,6 +7,9 @@ import LoadingScreen from "./components/LoadingScreen";
 export const metadata: Metadata = {
   title: "Romman - Portfolio",
   description: "Product Manager, Founder, and Growth Strategist",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
