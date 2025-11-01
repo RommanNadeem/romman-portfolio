@@ -33,8 +33,8 @@ export default function ClientLogos() {
       </div>
       <div className="relative">
         {/* Gradient overlays for fade effect */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 via-blue-50 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-orange-50 via-blue-50 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none" style={{ background: 'linear-gradient(to right, rgb(249, 250, 251), rgba(249, 250, 251, 0))' }}></div>
+        <div className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none" style={{ background: 'linear-gradient(to left, rgb(249, 250, 251), rgba(249, 250, 251, 0))' }}></div>
         
         <div className="flex animate-scroll">
           {duplicatedLogos.map((logo, index) => (
