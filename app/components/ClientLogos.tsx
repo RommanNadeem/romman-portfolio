@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Building2 } from 'lucide-react';
 
 const logos = [
+  { name: 'Aura Health', src: '/logos/aura.png' },
   { name: 'CreditBook', src: '/logos/creditbook.png' },
   { name: 'Insightio', src: '/logos/insightio.png' },
   { name: 'RepairDesk', src: '/logos/repairdesk.png' },
