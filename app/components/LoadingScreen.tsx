@@ -51,7 +51,7 @@ export default function LoadingScreen() {
         </div>
         
         {/* Main Content */}
-        <div className="space-y-6 flex flex-col items-center">
+        <div className="space-y-3 flex flex-col items-center">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight text-center">
             Booting Romman. Installing caffeine package
@@ -63,7 +63,7 @@ export default function LoadingScreen() {
           </p>
           
           {/* Did You Know Section */}
-          <div className="mt-10 pt-8 border-t border-gray-300/50 max-w-xl mx-auto text-center">
+          <div className="mt-6 pt-6 border-t border-gray-300/50 max-w-xl mx-auto text-center">
             <p className="text-base sm:text-lg font-bold text-blue-600 mb-4">
               Did you know?
             </p>
