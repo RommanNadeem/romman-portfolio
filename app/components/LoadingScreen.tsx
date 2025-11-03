@@ -3,8 +3,10 @@
 import { useEffect, useState, useMemo } from 'react';
 import Lottie from 'lottie-react';
 import coffeeAnimation from '@/public/coffee-animation.json';
+import { useLoading } from '../contexts/LoadingContext';
 
 export default function LoadingScreen() {
+  const { setIsLoading: setGlobalLoading } = useLoading();
   const [isLoading, setIsLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -29,13 +31,14 @@ export default function LoadingScreen() {
 
     const hideTimer = setTimeout(() => {
       setIsLoading(false);
+      setGlobalLoading(false);
     }, 5000); // Completely hide at 5 seconds
 
     return () => {
       clearTimeout(fadeTimer);
       clearTimeout(hideTimer);
     };
-  }, []);
+  }, [setGlobalLoading]);
 
   if (!isLoading) return null;
 

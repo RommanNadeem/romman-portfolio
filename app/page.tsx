@@ -7,11 +7,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, Linkedin, Phone, FileText, Calendar, Sparkles, Rocket, Target, Code, Lightbulb, TrendingUp, Users, Zap, ArrowRight, Music, BookOpen, Palette } from 'lucide-react';
 import AnimatedCounter from './components/AnimatedCounter';
+import { useLoading } from './contexts/LoadingContext';
 
 export default function Home() {
+  const { isLoading } = useLoading();
+
   return (
     <main className="min-h-screen" style={{ background: 'transparent' }}>
-      <Navbar />
+      {!isLoading && <Navbar />}
       <ClientLogos />
       
       {/* Hero Section */}

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import Footer from "./components/Footer";
-import LoadingScreen from "./components/LoadingScreen";
+import ClientLayout from "./components/ClientLayout";
 
 export const metadata: Metadata = {
   title: "Romman - Portfolio",
@@ -31,9 +30,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <LoadingScreen />
-        {children}
-        <Footer />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
