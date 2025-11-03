@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased" style={{ background: 'transparent' }}>
+      <head>
         <Script
           id="clarity-analytics"
           strategy="afterInteractive"
@@ -32,6 +32,8 @@ export default function RootLayout({
             `,
           }}
         />
+      </head>
+      <body className="antialiased" style={{ background: 'transparent' }}>
         <Script
           id="cal-com-embed"
           strategy="lazyOnload"
