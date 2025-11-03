@@ -4,10 +4,32 @@ import "./globals.css";
 import ClientLayout from "./components/ClientLayout";
 
 export const metadata: Metadata = {
-  title: "Romman - Portfolio",
-  description: "Product Manager, Founder, and Growth Strategist",
+  title: "AI Product Manager Portfolio | Romman Nadeem",
+  description: "AI product manager and builder. Case studies on Aura Health conversion lifts, AI agents, and voice companions. Book a call.",
   icons: {
     icon: '/icon.svg',
+  },
+  metadataBase: new URL('https://romman-portfolio.vercel.app'),
+  openGraph: {
+    title: "AI Product Manager Portfolio | Romman Nadeem",
+    description: "AI product manager and builder. Case studies on Aura Health conversion lifts, AI agents, and voice companions.",
+    url: 'https://romman-portfolio.vercel.app',
+    siteName: 'Romman Nadeem Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "AI Product Manager Portfolio | Romman Nadeem",
+    description: "AI product manager and builder. Case studies on Aura Health conversion lifts, AI agents, and voice companions.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
@@ -30,6 +52,23 @@ export default function RootLayout({
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
               })(window, document, "clarity", "script", "u0h9p4f2x6");
             `,
+          }}
+        />
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Muhammad Romman Nadeem",
+              "jobTitle": "AI Product Manager",
+              "url": "https://romman-portfolio.vercel.app/",
+              "email": "mailto:romman818@gmail.com",
+              "sameAs": [
+                "https://www.linkedin.com/in/muhammadromman"
+              ]
+            })
           }}
         />
       </head>

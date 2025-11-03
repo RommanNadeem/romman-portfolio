@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'StudioStream AI - Design Automation Platform | Romman Portfolio',
@@ -6,8 +7,28 @@ export const metadata = {
 };
 
 export default function StudioStreamPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "StudioStream AI - Design Automation Platform",
+    "description": "AI-powered design automation platform that turns sales calls into design briefs and generates Midjourney-optimized prompts.",
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Romman Nadeem"
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": new Date().toISOString(),
+    "image": "https://romman-portfolio.vercel.app/icon.svg",
+    "keywords": "AI, design automation, Midjourney, product development, AI agents, voice companions"
+  };
+
   return (
     <main className="min-h-screen">
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="mb-8">

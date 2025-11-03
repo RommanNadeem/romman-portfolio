@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Insightio - AI User Research Synthesis | Romman Portfolio',
@@ -6,8 +7,28 @@ export const metadata = {
 };
 
 export default function InsightioPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Insightio - AI User Research Synthesis",
+    "description": "AI-powered user research synthesis platform that compresses weeks of manual synthesis into same-day insight cycles.",
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Romman Nadeem"
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": new Date().toISOString(),
+    "image": "https://romman-portfolio.vercel.app/icon.svg",
+    "keywords": "AI, user research, product analytics, UX research, data synthesis, product management"
+  };
+
   return (
     <main className="min-h-screen">
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="mb-8">

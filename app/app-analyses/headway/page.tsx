@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Headway Book Summaries - Product Analysis | Romman Portfolio',
@@ -6,8 +7,28 @@ export const metadata = {
 };
 
 export default function HeadwayAnalysisPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Headway Book Summaries - Product Analysis",
+    "description": "In-depth product experience analysis of Headway, a book summary app for quick learning and personal growth.",
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Romman Nadeem"
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": new Date().toISOString(),
+    "image": "https://romman-portfolio.vercel.app/icon.svg",
+    "keywords": "headway, book summaries, product analysis, app analysis, UX design, retention, gamification"
+  };
+
   return (
     <main className="min-h-screen">
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="mb-8">

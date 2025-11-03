@@ -15,8 +15,9 @@ export default function AnimatedCounter({
   duration = 2000,
   className = ''
 }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
   const [hasAnimated, setHasAnimated] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const counterRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -46,6 +47,9 @@ export default function AnimatedCounter({
   }, [hasAnimated, value]);
 
   const startAnimation = () => {
+    setIsVisible(true);
+    setCount(0);
+    
     const startTime = Date.now();
     const endTime = startTime + duration;
 
@@ -70,7 +74,10 @@ export default function AnimatedCounter({
   };
 
   return (
-    <span ref={counterRef} className={className}>
+    <span 
+      ref={counterRef} 
+      className={`${className} ${!isVisible ? 'opacity-100' : 'opacity-100'}`}
+    >
       {count}{suffix}
     </span>
   );
