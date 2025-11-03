@@ -9,7 +9,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'career', 'strengths', 'style', 'work', 'analyses', 'outside', 'dive'];
+      const sections = ['home', 'testimonials', 'career', 'strengths', 'style', 'work', 'analyses', 'outside', 'dive'];
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -31,6 +31,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Overview', id: 'home' },
+    { label: 'Testimonials', id: 'testimonials' },
     { label: 'Experience', id: 'career' },
     { label: 'Strengths', id: 'strengths' },
     { label: 'Approach', id: 'style' },

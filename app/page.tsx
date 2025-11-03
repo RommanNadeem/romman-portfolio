@@ -4,6 +4,7 @@ import ClientLogos from './components/ClientLogos';
 import Navbar from './components/Navbar';
 import WorkingStyle from './components/WorkingStyle';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Linkedin, Phone, FileText, Calendar, Sparkles, Rocket, Target, Code, Lightbulb, TrendingUp, Users, Zap, ArrowRight, Music, BookOpen, Palette } from 'lucide-react';
 import AnimatedCounter from './components/AnimatedCounter';
 
@@ -17,7 +18,17 @@ export default function Home() {
       <div id="home" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16">
         <header className="mb-16">
           {/* Hero Section */}
-          <div className="mb-8">
+          <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="relative w-32 h-32 sm:w-36 sm:h-36 flex-shrink-0 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
+              <Image
+                src="/profile-photo.png"
+                alt="Romman Nadeem"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="flex-1">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 Hi, I'm Romman.
@@ -27,6 +38,7 @@ export default function Home() {
               Builder, Product Generalist, and AI-obsessed problem solver.
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mt-2"></div>
+            </div>
           </div>
           
           {/* Contact Links with Icons */}
@@ -72,19 +84,8 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Disclaimer */}
-          <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-l-4 border-amber-400 rounded-r-xl p-5 mb-8 shadow-sm">
-            <div className="flex gap-3">
-              <Sparkles className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-gray-800 leading-relaxed">
-                <span className="font-semibold">Disclaimer:</span> This is not my formal resume, so please don't try feeding it to a Resume Parser. (Unless you want to crash it. In that case… go wild.) This is me, unfiltered, raw, and occasionally funny.
-              </p>
-            </div>
-          </div>
-        </header>
-
         {/* Hero Description */}
-        <section className="mb-20">
+          <div className="mb-8">
           <div className="relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-indigo-500 to-purple-500 rounded-full"></div>
             <div className="pl-8 py-6 border-l-0">
@@ -102,7 +103,186 @@ export default function Home() {
               AI-native builder who ships fast, solves real problems, and scales products from early validation to meaningful traction.
             </p>
           </div>
-        </section>
+          </div>
+
+          {/* Testimonials */}
+          <div id="testimonials" className="mb-8 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-6">
+              <Users className="w-6 h-6 text-blue-600" />
+              <h3 className="text-2xl font-bold text-gray-900">What People Say</h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Brian Richmond */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">BR</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Brian Richmond</p>
+                      <p className="text-sm text-gray-600">Chief Data Officer at Aura Health</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/brian-richmond/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "Romman is a gifted product manager who led the core product growth at Aura for over 2 years. He is full of good ideas and constantly thinking about UX improvements that will drive conversion, engagement, and retention."
+                </p>
+              </div>
+
+              {/* Daniel Lee */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">DL</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Daniel Lee</p>
+                      <p className="text-sm text-gray-600">Forbes 30 Under 30</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/leedanieljk/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "Romman is one of the most driven and growth-oriented PMs I've met. He has an extreme growth mindset, is always learning, and brings an entrepreneurial approach to every challenge."
+                </p>
+              </div>
+
+              {/* Vitalina */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">V</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Vitalina</p>
+                      <p className="text-sm text-gray-600">Growth @Headway, AuraHealth</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/vitalina-zabolotnia/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "I had the pleasure of working with Romman at Aura, and it was always an incredibly smooth and enjoyable collaboration. He consistently came up with strong, creative hypotheses and was very proactive in driving projects forward."
+                </p>
+              </div>
+
+              {/* Steve Lee */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">SL</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Steve Lee</p>
+                      <p className="text-sm text-gray-600">CEO and Founder, Aura Health</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/skleest/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "Romman is a trustworthy product manager who has led Aura's core product growth. He excels in cross-functional leadership working with designers, engineers, and data scientists to create a product that people love."
+                </p>
+              </div>
+
+              {/* Usman Butt */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">UB</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Usman Butt</p>
+                      <p className="text-sm text-gray-600">CEO RepairDesk, Serial Entreprenuer</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/usmanbuttweb/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "A truly exceptional team player who had been a valuable asset to our product team. He wore multiple hats and consistently demonstrated exceptional work ethic, dedication, and a passion for delivering results."
+                </p>
+              </div>
+
+              {/* Phil Carter */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">PC</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Phil Carter</p>
+                      <p className="text-sm text-gray-600">Founder and CEO @ Elemental Growth, Advisor Perplexity</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/philgcarter/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "I spent 6 months as a growth advisor for Aura Health where I partnered closely with Romman as one of the company's leading product managers. Not only did I love working with Romman, but I found him to be exceptionally good at his job, and he meaningfully contributed to the impact I delivered as an advisor."
+                </p>
+              </div>
+            </div>
+            
+            {/* View All Link */}
+            <div className="mt-6 text-center">
+              <a 
+                href="https://www.linkedin.com/in/muhammadromman/details/recommendations/?detailScreenTabIndex=0" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium hover:underline transition-colors"
+              >
+                View all recommendations on LinkedIn
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </header>
 
         {/* Quick Highlights */}
         <section className="mb-20">

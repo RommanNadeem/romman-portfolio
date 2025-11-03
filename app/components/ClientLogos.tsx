@@ -24,11 +24,9 @@ export default function ClientLogos() {
     <div className="w-full overflow-hidden pt-24 pb-6">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-2">
         <div className="flex items-center justify-center gap-3">
-          <Building2 className="w-5 h-5 text-gray-400" />
           <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">
             Companies and Teams I Have Worked With
           </p>
-          <Building2 className="w-5 h-5 text-gray-400" />
         </div>
       </div>
       <div className="relative">
