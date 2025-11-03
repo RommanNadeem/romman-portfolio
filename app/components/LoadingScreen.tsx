@@ -24,11 +24,11 @@ export default function LoadingScreen() {
   useEffect(() => {
     const fadeTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 3500); // Start fading at 3.5 seconds
+    }, 4375); // Start fading at 4.375 seconds
 
     const hideTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 4000); // Completely hide at 4 seconds
+    }, 5000); // Completely hide at 5 seconds
 
     return () => {
       clearTimeout(fadeTimer);
