@@ -46,7 +46,7 @@ export default function LoadingScreen() {
     >
       <div className="text-center max-w-3xl mx-auto px-6 flex flex-col items-center justify-center">
         {/* Lottie Animation */}
-        <div className="w-56 h-56 sm:w-64 sm:h-64 mx-auto mb-2">
+        <div className="w-56 h-56 sm:w-64 sm:h-64 mx-auto mb-1">
           <Lottie animationData={coffeeAnimation} loop={true} />
         </div>
         
