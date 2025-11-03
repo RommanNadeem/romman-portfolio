@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, Linkedin, Phone, Calendar, Heart } from 'lucide-react';
+import { Mail, Linkedin, Phone, Calendar, Coffee } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -68,7 +68,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="text-center">
           <p className="text-gray-600 text-sm">
-            Built with <Heart className="inline w-4 h-4 text-red-500 fill-red-500" /> by Romman
+            Built with <Coffee className="inline w-4 h-4 text-amber-700" /> by Romman
           </p>
         </div>
       </div>
