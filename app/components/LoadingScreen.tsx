@@ -9,12 +9,13 @@ export default function LoadingScreen() {
   const [fadeOut, setFadeOut] = useState(false);
 
   const facts = [
-    "He spent 3 nights alone in a middle of jungle in Hunza Aliabad",
-    "He networks with strangers at strange places. (Naan shop)",
-    "He practically lives in coffee places",
-    "He would share AI ideas with you at 4am",
-    "He would spend hours staring stars.",
-    "Ask him to sing few lines of his songs, he will probably say \"He has a bad throat\"."
+    "Once spent three nights alone in the middle of a jungle near Aliabad, Hunza",
+    "Strikes up conversations with strangers in unlikely places, like a naan shop",
+    "Practically lives in coffee shops",
+    "Shares unprompted AI ideas at 4 a.m.",
+    "Can spend hours stargazing",
+    "Ask him to sing a few lines from his songs and he'll probably say he has a bad throat",
+    "Once walked into an invite-only founders meetup just to network"
   ];
 
   const randomFact = useMemo(() => {
