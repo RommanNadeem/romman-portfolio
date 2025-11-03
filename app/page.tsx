@@ -44,13 +44,6 @@ export default function Home() {
           {/* Contact Links with Icons */}
           <div className="flex flex-wrap items-center gap-4 mb-8">
             <a 
-              href="mailto:romman818@gmail.com" 
-              className="group flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md border border-gray-200 hover:border-blue-300 transition-all duration-200"
-            >
-              <Mail className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" />
-              <span className="text-gray-700 font-medium">romman818@gmail.com</span>
-            </a>
-            <a 
               href="https://www.linkedin.com/in/muhammadromman/" 
               target="_blank"
               rel="noopener noreferrer"
@@ -65,6 +58,13 @@ export default function Home() {
             >
               <Phone className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" />
               <span className="text-gray-700 group-hover:text-blue-600 transition-colors">+923214044498</span>
+            </a>
+            <a 
+              href="mailto:romman818@gmail.com" 
+              className="group flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md border border-gray-200 hover:border-blue-300 transition-all duration-200"
+            >
+              <Mail className="w-4 h-4 text-blue-600 group-hover:scale-110 transition-transform" />
+              <span className="text-gray-700 font-medium">romman818@gmail.com</span>
             </a>
             <Link
               href="/resume"
@@ -90,7 +90,7 @@ export default function Home() {
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-indigo-500 to-purple-500 rounded-full"></div>
             <div className="pl-8 py-6 border-l-0">
               <p className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 leading-relaxed">
-                I help startups turn 0 → 1 ideas into products, systems, and growth engines — without losing taste, speed, or user empathy.
+                I help startups turn 0 → 1 ideas into products, systems, and growth engines while maintaining taste, speed, and user empathy.
               </p>
             </div>
           </div>
@@ -112,20 +112,20 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900">What People Say</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Brian Richmond */}
+              {/* Phil Carter */}
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-sm">BR</span>
+                      <span className="text-white font-bold text-sm">PC</span>
                     </div>
                     <div>
-                      <p className="font-bold text-gray-900">Brian Richmond</p>
-                      <p className="text-sm text-gray-600">Chief Data Officer at Aura Health</p>
+                      <p className="font-bold text-gray-900">Phil Carter</p>
+                      <p className="text-sm text-gray-600">Founder and CEO @ Elemental Growth, Advisor Perplexity</p>
                     </div>
                   </div>
                   <a 
-                    href="https://www.linkedin.com/in/brian-richmond/" 
+                    href="https://www.linkedin.com/in/philgcarter/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-700 transition-colors"
@@ -134,7 +134,7 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed italic">
-                  "Romman is a gifted product manager who led the core product growth at Aura for over 2 years. He is full of good ideas and constantly thinking about UX improvements that will drive conversion, engagement, and retention."
+                  "I spent 6 months as a growth advisor for Aura Health where I partnered closely with Romman as one of the company's leading product managers. Not only did I love working with Romman, but I found him to be exceptionally good at his job, and he meaningfully contributed to the impact I delivered as an advisor."
                 </p>
               </div>
 
@@ -161,32 +161,6 @@ export default function Home() {
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed italic">
                   "Romman is one of the most driven and growth-oriented PMs I've met. He has an extreme growth mindset, is always learning, and brings an entrepreneurial approach to every challenge."
-                </p>
-              </div>
-
-              {/* Vitalina */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-sm">V</span>
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-900">Vitalina</p>
-                      <p className="text-sm text-gray-600">Growth @Headway, AuraHealth</p>
-                    </div>
-                  </div>
-                  <a 
-                    href="https://www.linkedin.com/in/vitalina-zabolotnia/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 transition-colors"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                </div>
-                <p className="text-sm text-gray-700 leading-relaxed italic">
-                  "I had the pleasure of working with Romman at Aura, and it was always an incredibly smooth and enjoyable collaboration. He consistently came up with strong, creative hypotheses and was very proactive in driving projects forward."
                 </p>
               </div>
 
@@ -242,20 +216,20 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Phil Carter */}
+              {/* Brian Richmond */}
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-sm">PC</span>
+                      <span className="text-white font-bold text-sm">BR</span>
                     </div>
                     <div>
-                      <p className="font-bold text-gray-900">Phil Carter</p>
-                      <p className="text-sm text-gray-600">Founder and CEO @ Elemental Growth, Advisor Perplexity</p>
+                      <p className="font-bold text-gray-900">Brian Richmond</p>
+                      <p className="text-sm text-gray-600">Chief Data Officer at Aura Health</p>
                     </div>
                   </div>
                   <a 
-                    href="https://www.linkedin.com/in/philgcarter/" 
+                    href="https://www.linkedin.com/in/brian-richmond/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-700 transition-colors"
@@ -264,7 +238,33 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed italic">
-                  "I spent 6 months as a growth advisor for Aura Health where I partnered closely with Romman as one of the company's leading product managers. Not only did I love working with Romman, but I found him to be exceptionally good at his job, and he meaningfully contributed to the impact I delivered as an advisor."
+                  "Romman is a gifted product manager who led the core product growth at Aura for over 2 years. He is full of good ideas and constantly thinking about UX improvements that will drive conversion, engagement, and retention."
+                </p>
+              </div>
+
+              {/* Vitalina */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">V</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-gray-900">Vitalina Zabolotnia</p>
+                      <p className="text-sm text-gray-600">Growth @Headway, AuraHealth</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://www.linkedin.com/in/vitalina-zabolotnia/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  "I had the pleasure of working with Romman at Aura, and it was always an incredibly smooth and enjoyable collaboration. He consistently came up with strong, creative hypotheses and was very proactive in driving projects forward."
                 </p>
               </div>
             </div>
@@ -333,7 +333,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">
                     <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Humraaz</span>
-                    <span className="text-gray-600 font-normal text-lg"> — Founder/Builder</span>
+                    <span className="text-gray-600 font-normal text-lg"> | Founder/Builder</span>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
@@ -372,7 +372,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">
                     <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">Aura Health</span>
-                    <span className="text-gray-600 font-normal text-lg"> – Product Manager</span>
+                    <span className="text-gray-600 font-normal text-lg"> | Product Manager</span>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
@@ -402,7 +402,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">
                     <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Insightio</span>
-                    <span className="text-gray-600 font-normal text-lg"> – Founder & CPO</span>
+                    <span className="text-gray-600 font-normal text-lg"> | Founder & CPO</span>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
@@ -432,7 +432,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">
                     <span className="bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Studio Stream</span>
-                    <span className="text-gray-600 font-normal text-lg"> – Product & Tech Consultant</span>
+                    <span className="text-gray-600 font-normal text-lg"> | Product & Tech Consultant</span>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
@@ -458,7 +458,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">
                     <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">CreditBook</span>
-                    <span className="text-gray-600 font-normal text-lg"> – User Researcher & Product Owner</span>
+                    <span className="text-gray-600 font-normal text-lg"> | User Researcher & Product Owner</span>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
@@ -484,7 +484,7 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">
                     <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">RepairDesk</span>
-                    <span className="text-gray-600 font-normal text-lg"> – Product Ops Lead</span>
+                    <span className="text-gray-600 font-normal text-lg"> | Product Ops Lead</span>
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
@@ -650,7 +650,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="text-gray-600 text-lg">
-                  I regularly publish teardown studies of top consumer apps — onboarding, retention, habit loops, AI usage, and monetization models.
+                  I regularly publish teardown studies of top consumer apps covering onboarding, retention, habit loops, AI usage, and monetization models.
                 </p>
                 <p className="text-gray-500 text-sm mt-2">
                   (Tolan, Headway, Commenter AI, others)
@@ -708,12 +708,12 @@ export default function Home() {
             <div>
               <p>• I love buying books.</p>
               <p className="mt-2 italic text-gray-500 text-sm">
-                (Hot take: there are two kinds of people in the world—those who read books and those who buy them. I'm proudly the latter.)
+                (Hot take: there are two kinds of people in the world: those who read books and those who buy them. I'm proudly the latter.)
               </p>
             </div>
             
             <div>
-              <p>• Painting — I am terrible at it</p>
+              <p>• Painting (I am terrible at it)</p>
               <a 
                 href="https://www.notion.so/View-here-at-your-own-risk-26aee82111b280ea820edfa1bcde0757?pvs=21"
                 target="_blank"

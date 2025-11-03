@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Lottie from 'lottie-react';
+import coffeeAnimation from '@/public/coffee-animation.json';
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,8 +32,8 @@ export default function LoadingScreen() {
       }`}
     >
       <div className="text-center">
-        <div className="text-9xl mb-6 animate-bounce" style={{ animationDuration: '1.5s' }}>
-          ☕
+        <div className="w-64 h-64 mx-auto mb-6">
+          <Lottie animationData={coffeeAnimation} loop={true} />
         </div>
         <div className="space-y-4 animate-pulse" style={{ animationDuration: '2s' }}>
           <h2 className="text-3xl font-bold text-gray-900 mb-3">
@@ -47,11 +49,6 @@ export default function LoadingScreen() {
               (We're brewing something great...)
             </span>
           </p>
-          <div className="mt-8 flex items-center justify-center gap-3">
-            <div className="w-3 h-3 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-            <div className="w-3 h-3 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-            <div className="w-3 h-3 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-          </div>
         </div>
       </div>
     </div>
