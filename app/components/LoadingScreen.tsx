@@ -44,22 +44,30 @@ export default function LoadingScreen() {
         fadeOut ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      <div className="text-center max-w-2xl mx-auto px-6">
-        <div className="w-64 h-64 mx-auto mb-8">
+      <div className="text-center max-w-3xl mx-auto px-6">
+        {/* Lottie Animation */}
+        <div className="w-56 h-56 sm:w-64 sm:h-64 mx-auto mb-6">
           <Lottie animationData={coffeeAnimation} loop={true} />
         </div>
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">
+        
+        {/* Main Content */}
+        <div className="space-y-6">
+          {/* Heading */}
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
             Booting Romman. Installing caffeine package
           </h2>
-          <p className="text-xl text-gray-700 max-w-lg mx-auto leading-relaxed font-medium mb-6">
+          
+          {/* Subheading */}
+          <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto font-medium">
             OKR one is coffee. Then we ship.
           </p>
-          <div className="mt-8 pt-6 border-t border-gray-200">
-            <p className="text-lg font-bold text-gray-900 mb-3">
+          
+          {/* Did You Know Section */}
+          <div className="mt-10 pt-8 border-t border-gray-300/50 max-w-xl mx-auto">
+            <p className="text-base sm:text-lg font-bold text-blue-600 mb-4">
               Did you know?
             </p>
-            <p className="text-base text-gray-600 max-w-lg mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-4">
               {randomFact}
             </p>
           </div>
