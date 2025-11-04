@@ -63,7 +63,7 @@ export default function HeadwayAnalysisPage() {
               </a>
             </div>
             <iframe 
-              src="/Headway.pdf" 
+              src="/Headway.pdf#toolbar=0&navpanes=0&scrollbar=0" 
               className="w-full h-[800px]"
               title="Headway Analysis PDF"
             />

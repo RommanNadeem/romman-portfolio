@@ -42,7 +42,7 @@ export default function NoomAnalysisPage() {
               </a>
             </div>
             <iframe 
-              src="/NoomAnalysis.pdf" 
+              src="/NoomAnalysis.pdf#toolbar=0&navpanes=0&scrollbar=0" 
               className="w-full h-[800px]"
               title="Noom Analysis PDF"
             />

@@ -6,7 +6,6 @@ import WorkingStyle from './components/WorkingStyle';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, Linkedin, Phone, FileText, Calendar, Sparkles, Rocket, Target, Code, Lightbulb, TrendingUp, Users, Zap, ArrowRight, Music, BookOpen, Palette } from 'lucide-react';
-import AnimatedCounter from './components/AnimatedCounter';
 import { useLoading } from './contexts/LoadingContext';
 
 export default function Home() {
@@ -292,25 +291,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="text-3xl font-bold text-gray-900 mb-2">
-                $<AnimatedCounter value={2} suffix="M" duration={1500} />+
+                $2M+
               </div>
               <div className="text-sm text-gray-600">Revenue impact</div>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="text-3xl font-bold text-gray-900 mb-2">
-                <AnimatedCounter value={10} duration={1500} />+
+                10+
               </div>
               <div className="text-sm text-gray-600">Industries</div>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="text-3xl font-bold text-gray-900 mb-2">
-                <AnimatedCounter value={50} duration={1500} />+
+                50+
               </div>
               <div className="text-sm text-gray-600">Features shipped</div>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="text-3xl font-bold text-gray-900 mb-2">
-                <AnimatedCounter value={3} duration={1500} />
+                3
               </div>
               <div className="text-sm text-gray-600">AI Startups Built and Launched</div>
             </div>
