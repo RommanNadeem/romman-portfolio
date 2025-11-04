@@ -12,7 +12,6 @@ const logos = [
   { name: 'ABC', src: '/logos/abc.png' },
   { name: 'Nuwave', src: '/logos/nuwave.png' },
   { name: 'Paqqup', src: '/logos/Paqqup.png' },
-  { name: 'Tech Circle', src: '/logos/techcircle.png' },
   { name: 'Truly Will', src: '/logos/trulyWill.png' },
 ];
 
