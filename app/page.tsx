@@ -330,7 +330,12 @@ export default function Home() {
           
           <div className="grid gap-6 lg:gap-8">
             {/* Humraaz */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-200 hover:border-blue-300 transition-all duration-300 overflow-hidden">
+            <a
+              href="http://www.humraaz.live" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-200 hover:border-blue-300 transition-all duration-300 overflow-hidden block cursor-pointer"
+            >
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-bl-full transform translate-x-8 -translate-y-8 group-hover:scale-150 transition-transform duration-500"></div>
               <div className="relative">
                 <div className="flex items-start justify-between mb-4">
@@ -338,19 +343,14 @@ export default function Home() {
                     <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Humraaz</span>
                     <span className="text-gray-600 font-normal text-lg"> | Founder/Builder</span>
                   </h3>
+                  <ArrowRight className="w-6 h-6 text-blue-600 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </div>
                 <p className="text-gray-600 mb-4 font-medium">
                   AI emotional companion for Pakistan. Built conversational memory, voice, and trust-based experience loops.
                 </p>
-                <a 
-                  href="http://www.humraaz.live" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 text-blue-600 hover:underline font-medium mb-4"
-                >
+                <div className="inline-flex items-center gap-2 text-blue-600 font-medium mb-4">
                   www.humraaz.live
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </div>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex gap-3">
                     <span className="text-blue-500 leading-none mt-[0.125rem] flex-shrink-0">▸</span>
@@ -366,7 +366,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </a>
 
             {/* Aura Health */}
             <div className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-200 hover:border-blue-300 transition-all duration-300 overflow-hidden">

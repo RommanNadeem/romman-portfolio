@@ -35,53 +35,53 @@ export default function AppAnalysesPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <Link 
-                href="/app-analyses/tolan"
-                className="text-blue-600 hover:underline font-medium text-lg block mb-2"
-              >
+            <Link 
+              href="/app-analyses/tolan"
+              className="group bg-white rounded-lg p-6 shadow-sm border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 block"
+            >
+              <h3 className="text-blue-600 group-hover:text-blue-700 font-medium text-lg mb-2">
                 Tolan — AI Companion →
-              </Link>
+              </h3>
               <p className="text-gray-600 text-sm mb-3">
                 AI companion app designed as a playful "alien best friend" with emotional support, creativity, and well-being features
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <Link 
-                href="/app-analyses/noom"
-                className="text-blue-600 hover:underline font-medium text-lg block mb-2"
-              >
+            <Link 
+              href="/app-analyses/noom"
+              className="group bg-white rounded-lg p-6 shadow-sm border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 block"
+            >
+              <h3 className="text-blue-600 group-hover:text-blue-700 font-medium text-lg mb-2">
                 Noom — Weight Loss →
-              </Link>
+              </h3>
               <p className="text-gray-600 text-sm mb-3">
                 Psychology-driven weight loss app combining behavioral science, gamification, and community accountability
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <Link 
-                href="/app-analyses/headway"
-                className="text-blue-600 hover:underline font-medium text-lg block mb-2"
-              >
+            <Link 
+              href="/app-analyses/headway"
+              className="group bg-white rounded-lg p-6 shadow-sm border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 block"
+            >
+              <h3 className="text-blue-600 group-hover:text-blue-700 font-medium text-lg mb-2">
                 Headway — Book Summaries →
-              </Link>
+              </h3>
               <p className="text-gray-600 text-sm mb-3">
                 Book summary app for learning key ideas from bestselling titles in minutes a day
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <Link 
-                href="/app-analyses/commenter-ai"
-                className="text-blue-600 hover:underline font-medium text-lg block mb-2"
-              >
+            <Link 
+              href="/app-analyses/commenter-ai"
+              className="group bg-white rounded-lg p-6 shadow-sm border border-gray-200 hover:shadow-lg hover:border-blue-300 transition-all duration-300 block"
+            >
+              <h3 className="text-blue-600 group-hover:text-blue-700 font-medium text-lg mb-2">
                 Commenter AI — AI LinkedIn Comment →
-              </Link>
+              </h3>
               <p className="text-gray-600 text-sm mb-3">
                 Comprehensive analysis combining GA data, Clarity recordings, and design evaluation
               </p>
-            </div>
+            </Link>
           </div>
         </section>
 
