@@ -21,14 +21,20 @@ export default function Home() {
         <header className="mb-16">
           {/* Hero Section */}
           <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <div className="relative w-32 h-32 sm:w-36 sm:h-36 flex-shrink-0 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
-              <Image
-                src="/profile-photo.png"
-                alt="Romman Nadeem"
-                fill
-                className="object-cover"
-                priority
-              />
+            <div className="relative w-32 h-32 sm:w-36 sm:h-36 flex-shrink-0">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
+                <Image
+                  src="/profile-photo.png"
+                  alt="Romman Nadeem"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              {/* Open for Work Badge */}
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full shadow-lg text-xs font-bold whitespace-nowrap animate-pulse">
+                🟢 Open for Work
+              </div>
             </div>
             <div className="flex-1">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
