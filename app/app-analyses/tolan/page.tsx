@@ -53,7 +53,7 @@ export default function TolanAnalysisPage() {
             </div>
             <iframe 
               src="/TolanAnalysis.pdf#toolbar=0&navpanes=0&scrollbar=0" 
-              className="w-full h-[800px]"
+              className="w-full h-[600px]"
               title="Tolan Analysis PDF"
             />
           </div>
