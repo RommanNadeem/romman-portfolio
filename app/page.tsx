@@ -685,6 +685,14 @@ export default function Home() {
               </div>
               <div className="flex gap-4">
                 <span className="text-emerald-500 leading-none mt-[0.125rem] flex-shrink-0">▸</span>
+                <p className="flex-1"><span className="font-semibold text-gray-900">Networking with global leaders and helping founders build teams</span></p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-emerald-500 leading-none mt-[0.125rem] flex-shrink-0">▸</span>
+                <p className="flex-1"><span className="font-semibold text-gray-900">Volunteering in helping new founders</span> understand their drop-off points</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-emerald-500 leading-none mt-[0.125rem] flex-shrink-0">▸</span>
                 <p className="flex-1"><span className="font-semibold text-gray-900">Community contributor</span> in product & AI builder circles</p>
               </div>
             </div>
