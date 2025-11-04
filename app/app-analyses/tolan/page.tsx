@@ -35,6 +35,30 @@ export default function TolanAnalysisPage() {
           </div>
         </div>
 
+        {/* PDF Embed */}
+        <div className="mb-12">
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+            <div className="p-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-gray-900">Full Analysis PDF</h2>
+              <a 
+                href="/TolanAnalysis.pdf" 
+                download
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download PDF
+              </a>
+            </div>
+            <iframe 
+              src="/TolanAnalysis.pdf" 
+              className="w-full h-[800px]"
+              title="Tolan Analysis PDF"
+            />
+          </div>
+        </div>
+
         <hr className="border-gray-300 mb-12" />
 
         {/* Overview */}
