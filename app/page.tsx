@@ -9,7 +9,6 @@ import {
   Dot,
   Layers,
   LandPlot,
-  LinkIcon,
   Linkedin,
   Mail,
   MapPin,
